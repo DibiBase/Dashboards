@@ -1,3 +1,4 @@
+Metric Collection for Dibibase v1.0
 # Introduction
 
 Dibibase uses prometheus to scrap all the metrics needed and events to then be shown on Grafana dashboards.
@@ -16,7 +17,7 @@ you need to install is Grafana, Prometheus, and node exporter for metric collect
 
 # Prometheus Configuration
 
-after installing prometheus head to the installation place (where you unzipped your tar ot whatnot) and replace the *prometheus.yml* file with the one included [here]().
+after installing prometheus head to the installation place (where you unzipped your tar ot whatnot) and replace the *prometheus.yml* file with the one included [/prometheus](/prometheus/).
 
  Make sure you install and run the node exporter as well.
 
@@ -26,6 +27,7 @@ After running the database, check if **DIBIBASE** target is up and running on pr
 
 # Grafana Setup
 
-After installing prometheus you'll find all Dibibase dashboards located in `/grafana/` directory , make sure to connect to prometheus port (9100) for single node usage, and insert every node port for cluster usage.
+After installing prometheus you'll find all Dibibase dashboards located in [/grafana](/grafana/) directory and then back to grafana in order To import a dashboard click Import under the Dashboards icon in the side menu..
+make sure to connect to prometheus port (9100) for single node usage, and insert every node port for cluster usage.
 
- 
+![import_dashboard](.screenshots/import_step1.png) 
